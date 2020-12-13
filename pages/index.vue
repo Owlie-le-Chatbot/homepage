@@ -1,78 +1,43 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        owlie-landing
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div class="flex flex-row">
+    <div class="flex-grow h-screen overflow-auto">
+      <header
+        class="w-full flex px-2 py-2 lg:hidden block fixed bg-white shadow"
+      >
+        <chat-button class="flex-shrink ml-auto" />
+      </header>
+
+      <div class="container lg:px-24 px-12 mt-24 lg:mt-12 mb-12 mx-auto">
+        <logo class="w-48 mx-auto mb-12" />
+
+        <nuxt-content class="prose" :document="data" />
+
+        <app-footer />
       </div>
+    </div>
+
+    <div class="hidden lg:block flex-shrink h-screen chatbot border-l-2">
+      <chat-iframe />
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  async asyncData({ $content }) {
+    const data = await $content('home').fetch();
+    return {
+      data,
+    };
+  },
+};
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
+.chatbot {
+  width: 650px;
 }
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+h1 {
+  @apply text-center;
 }
 </style>

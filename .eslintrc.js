@@ -2,17 +2,26 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    node: true
+    node: true,
   },
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
   },
   extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended'
+    'plugin:vue/essential',
+    'eslint:recommended',
   ],
   plugins: [
   ],
-  // add your custom rules here
-  rules: {}
-}
+  rules: {
+    'no-console': ['warn', { allow: ['warn', 'error'] }],
+    'no-unused-vars': [1, {
+      argsIgnorePattern: '^_',
+      varsIgnorePattern: '(^debug$|^_)',
+    }],
+    'comma-dangle': [1, 'always-multiline'],
+    quotes: [1, 'single'],
+    semi: ['error', 'always'],
+    'semi-spacing': 'error',
+  },
+};
