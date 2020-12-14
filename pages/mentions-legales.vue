@@ -6,7 +6,7 @@
       >
     </header>
 
-    <div class="container mx-auto prose">
+    <div class="container lg:px-24 px-12 mt-24 lg:mt-12 mb-12 mx-auto">
       <nuxt-content class="prose" :document="data" />
     </div>
 
