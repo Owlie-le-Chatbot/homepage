@@ -16,7 +16,7 @@
     "@nuxtjs/google-fonts": "^1.2.0",
     "@tailwindcss/typography": "^0.3.1",
     "core-js": "^3.6.5",
-    "node-sass": "^4.14.1",
+    "node-sass": "^5.0.0",
     "nuxt": "^2.14.6",
     "sass-loader": "^9.0.3"
   },
