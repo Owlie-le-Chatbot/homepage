@@ -2,7 +2,7 @@
 
 ## Préambule
 
-Le chatbot Owlie ainsi que son site internet sont un projet gratuit et bénévole de Clara Falala-Sechet, Igor Thiriez et Lee Antoine. Aucune entreprise n'est impliquée dans sa réalisation et aucune donnée d'utilisation n'est exploitée dans un but commercial. Le code source de ce site est disponible en open-source sur [Github](https://github.com/owlie-le-chatbot).
+Le chatbot Owlie ainsi que son site internet sont un projet gratuit et bénévole de Clara Falala-Sechet, Igor Thiriez et Lee Antoine. Aucune entreprise n'est impliquée dans sa réalisation et aucune donnée d'utilisation n'est exploitée dans un but commercial. Le code source de ce site et du chatbot sont disponibles en open-source sur [Github](https://github.com/owlie-le-chatbot).
 
 ## Confidentialité
 
