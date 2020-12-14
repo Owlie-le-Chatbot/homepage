@@ -19,6 +19,7 @@ module.exports = {
       argsIgnorePattern: '^_',
       varsIgnorePattern: '(^debug$|^_)',
     }],
+    'vue/experimental-script-setup-vars': 0,
     'comma-dangle': [1, 'always-multiline'],
     quotes: [1, 'single'],
     semi: ['error', 'always'],
