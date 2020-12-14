@@ -1,6 +1,8 @@
 # Owlie le chatbot - homepage
 
-Homepage du chatbot Owlie
+Homepage du chatbot de soutien psychologique Owlie: [https://www.owlielechatbot.fr](https://www.owlielechatbot.fr).
+
+![](static/img/social-banner.png)
 
 ## Build Setup
 
