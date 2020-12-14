@@ -55,7 +55,6 @@ export default {
   components: true,
 
   buildModules: [
-    'nuxt-purgecss',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
   ],
@@ -63,11 +62,6 @@ export default {
   modules: [
     '@nuxt/content',
   ],
-
-  purgeCSS: {
-    enabled: true,
-    whitelistPatterns: [/svg.*/],
-  },
 
   googleFonts: {
     families: {
