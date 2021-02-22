@@ -5,7 +5,7 @@ export default {
     title: 'Owlie le chatbot',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=0' },
       { hid: 'description', name: 'description', content: 'Owlie est un chatbot gratuit de soutien psychologique' },
       { name: 'application-name', content: 'Owlie le chatbot' },
       { name: 'description', content: 'Owlie est un chatbot gratuit de soutien psychologique' },
