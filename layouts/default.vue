@@ -8,6 +8,9 @@ body {
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
   display: flex;
+  height: -moz-available;          /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  height: fill-available;
 }
 
 html {
