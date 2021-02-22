@@ -16,5 +16,6 @@ html {
 
 #__nuxt, #__layout {
   min-height: 100%;
+  position: relative;
 }
 </style>
