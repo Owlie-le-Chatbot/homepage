@@ -1,6 +1,6 @@
 <template>
   <iframe
-    :src="`https://chat.csml.dev/channels/xxneg4neyafrlgczyqyl3iikmqhezxwm?debug=${debug_mode}`"
+    :src="`https://d15ut04ofco5q9.cloudfront.net/`"
     width="100%"
     height="100%"
     frameborder="0"
