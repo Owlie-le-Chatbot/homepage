@@ -35,7 +35,7 @@ export default {
 
 <style>
 .chatbot {
-  width: 480px;
+  width: 580px;
 }
 h1 {
   @apply text-center;
